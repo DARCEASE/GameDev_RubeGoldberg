@@ -24,5 +24,5 @@ public class WhenHit : MonoBehaviour
             Destroy(jointLatch);
   
     }
-
+    
 } 
