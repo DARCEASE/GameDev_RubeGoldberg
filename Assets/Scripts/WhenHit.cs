@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WhenHit : MonoBehaviour
 {
+    public GameObject jointLatch;
+    public GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +17,12 @@ public class WhenHit : MonoBehaviour
     {
         
     }
-}
+   void OnTriggerEnter2D(Collider2D joint)
+    {
+     
+            Debug.Log("Im collididng with this!");
+            Destroy(jointLatch);
+  
+    }
+
+} 
